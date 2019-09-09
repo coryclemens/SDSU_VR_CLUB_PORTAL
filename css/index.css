@@ -1,0 +1,265 @@
+body {
+    background: url(../assets/vr.svg) no-repeat;
+    font-family: sans-serif;
+}
+
+/* .nav-button{
+    background: rgb(56, 16, 18);
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+nav{
+    height: 10vh;
+}
+
+.hamburger{
+    z-index: 2;
+}
+.hamburger:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.aztec-logo:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+h3{
+    color: white;
+    letter-spacing: 14px;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.title-bar{
+    z-index: -1;
+    display: flex;
+    width: 90%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+    padding-top: 20px;
+}
+.title-bar img:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.title-aztec {
+    font: 40px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+    color: #fefefe;
+    letter-spacing: -44;
+    cursor: none;
+    border-bottom: 1px solid transparent;
+  }
+.title-aztec:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    border-bottom: 1px solid transparent;
+    border-color: white;
+  }
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 300;
+    letter-spacing: 6px
+}
+.nav-links li a:hover{
+    letter-spacing: 7px;
+    transition: 0.3s;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.image{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.fake-burg{
+    width: 60%;
+}
+
+h1 {
+    position: absolute;
+    top: 200px;
+    width: 60%;
+    font-size: 200px;
+    color: white;
+    left: 20%;
+}
+
+.logo{
+    width: 100%;
+}
+
+.logo:hover{
+    cursor: pointer;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+
+}
+
+h2{
+    /* display: flex; */
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    color: white;
+    font-size: 40px;
+    z-index: 0;
+}
+
+.text-body{
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    bottom: 25%;
+    right: 15%
+}
+
+
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: 100px;
+    }
+    .nav-links{
+        position: fixed;
+        background: rgb(155, 49, 55);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        transition: 1.5s;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        opacity: 0;
+    }
+    .nav-links.open{
+        clip-path: circle(1200px at 90% -20%);
+        -webkit-clip-path: circle(1200px at 90% -20%);
+        pointer-events: all;
+        transition: .7s;
+        opacity: 1;
+    }
+
+    .landing{
+        flex-direction: column;
+        z-index: 0;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+    }
+    
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+        border-radius: 20px;
+    }
+
+    .image, .text-body{
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 1800px){
+
+    .nav-links{
+        position: fixed;
+        background: rgb(155, 49, 55);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        transition: 1.5s;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        opacity: 0;
+    }
+    .nav-links.open{
+        clip-path: circle(15900px at 90% -20%);
+        -webkit-clip-path: circle(1900px at 90% -20%);
+        pointer-events: all;
+        transition: .7s;
+        opacity: 1;
+    }
+
+    .landing{
+        flex-direction: column;
+        z-index: 0;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 64%;
+        transform: translate(-5%, -50%);
+    }
+    
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+        border-radius: 20px;
+    }
+
+    .image, .text-body{
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 1346px){
+
+h2 {
+    width: 80%;
+}
+
+}
