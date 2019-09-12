@@ -15,6 +15,6 @@ function facebook(){
 }
 
 function github(){
-    newUrl = "https://github.com/join";
+    newUrl = "https://github.com/SDSU-VR-Club";
     document.location.href = newUrl;
 }
