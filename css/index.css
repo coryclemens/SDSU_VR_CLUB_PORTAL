@@ -1,5 +1,5 @@
 body {
-    background: url(../assets/vr.svg) no-repeat;
+    background: url(../assets/PageBackgrounds/vr.svg) no-repeat;
     font-family: sans-serif;
 }
 
@@ -112,6 +112,10 @@ h1 {
     font-size: 200px;
     color: white;
     left: 20%;
+}
+
+.main-header h1{
+    
 }
 
 .logo{
