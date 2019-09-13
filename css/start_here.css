@@ -23,13 +23,14 @@ a {
 }
 
 .main-header {
-    height: 55vh;
-    display: felx;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 2rem;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .main-header h1 {
@@ -42,10 +43,57 @@ a {
     color:#b50d10;
 }
 
+.main-heaper p {
+    font-size: 2rem;
+}
 
-/* .nav-button{
-    background: rgb(56, 16, 18);
-} */
+.img {
+    width: 100%;
+    size: 500px 500px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+}
+
+.card img {
+    height: 400px;
+}
+
+.card > div {
+    padding: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
 
 .hamburger{
     z-index: 2;
@@ -87,14 +135,23 @@ a {
     transition: 0.3s;
 }
 
-.title-aztec {
-    font: 40px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+.title-aztec .word1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 50px;
     color: #fefefe;
-    letter-spacing: -44;
+    letter-spacing: 10px;
     cursor: none;
     border-bottom: 1px solid transparent;
   }
-.title-aztec:hover{
+  .title-aztec .word2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 50px;
+    color: #9b3137;
+    letter-spacing: 10px;
+    cursor: none;
+    border-bottom: 1px solid transparent;
+  }
+.title-aztec .word1:hover{
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
     border-bottom: 1px solid transparent;
@@ -118,7 +175,7 @@ a {
 
 #navbar{
     overflow: hidden;
-    position: fixed; 
+    position: relative;
     top: 0; 
     width: 100%;
 }
@@ -170,6 +227,10 @@ a {
         pointer-events: all;
         transition: .7s;
         opacity: 1;
+    }
+
+    .card{
+        display: block;
     }
 
     .landing{

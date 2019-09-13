@@ -6,101 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/start_here.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Start Here</title>
 </head>
 <body>
         <nav id="navbar">
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <ul class="nav-links">
-                    <li class="nav-button"><a href="index.html">Home</a></li>
-                    <li class="nav-button"><a href="#">Getting Familiar with Unity</a></li>
-                    <li class="nav-button"><a href="#">Creating Your First Game</a></li>
-                    <li class="nav-button"><a href="#">Making it VR</a></li>
-                    <li class="nav-button"><a href="#">Developing VR without a Headset</a></li>
-                    <li class="nav-button"><a href="#">Choosing a platform</a></li>
-                    <li class="nav-button"><a href="#">Source Control!</a></li>
-                    <li class="nav-button"><a href="#">Our Other Projects</a></li>
-                </ul>
-                <div class="title-bar">
-                    <img class="aztec-logo" src="../assets/aztec.png" alt="aztec" style="width: 14%; position: relative; z-index: -1;" >
-                    <h3 class="title-aztec">
-                        <span class="word1">SDSU VR</span>
-                        <span class="word2"> NEW MEMBER PORTAL</span>
-                    </h3>
-                    <img class="logo" src="../assets/facebook.png" alt="facebook" style="width: 61px;" onclick="facebook()">
-                    <img class="logo" href="#" src="../assets/GitHub-Mark.png" alt="github" style="width: 80px;" onclick="github()">
-                </div>
-            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-button"><a href="index.html">Home</a></li>
+                <li class="nav-button"><a href="#">Getting Familiar with Unity</a></li>
+                <li class="nav-button"><a href="#">Creating Your First Game</a></li>
+                <li class="nav-button"><a href="#">Making it VR</a></li>
+                <li class="nav-button"><a href="#">Developing VR without a Headset</a></li>
+                <li class="nav-button"><a href="#">Choosing a platform</a></li>
+                <li class="nav-button"><a href="#">Source Control!</a></li>
+                <li class="nav-button"><a href="#">Our Other Projects</a></li>
+            </ul>
+            <div class="title-bar">
+                <img class="aztec-logo" src="../assets/aztec.png" alt="aztec" style="width: 14%; position: relative; z-index: -1;" >
+                <h3 class="title-aztec">
+                    <span class="word1">STARTING FROM  </span>
+                    <span class="word2">  SCRATCH</span>
+                </h3>
+                <img class="logo" src="../assets/facebook.png" alt="facebook" style="width: 61px;" onclick="facebook()">
+                <img class="logo" href="#" src="../assets/GitHub-Mark.png" alt="github" style="width: 80px;" onclick="github()">
+            </div>
+        </nav>
 
 
     <header class="main-header">
-        <h1><span>Starting From</span> Scratch</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Reiciendis consectetur esse fuga accusamus rem, harum blanditiis totam autem reprehenderit. 
-            Id aspernatur optio eum incidunt perferendis necessitatibus cum eveniet, sunt dolores.</p>
+        <p> This page is for those who do not have an IDE installed; more specifically, 
+            for those who are new to installing and integrating Unity and Unreal Engine 
+            with Visual Studio. Scroll down to learn how to install the latest version
+            of Visual Studio (2019), as well as how to get the proper packages and integrate
+            your gaming engine of choice.</p>
     </header>
 
     <main class="container">
-        <section class="card">
-            <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/visual_studio_download.png" alt="download"></a>
+        <section class="card" data-aos="fade-left">
+            <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
             <div>
                 <h3>Downloading Visual Studio 2019</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                   Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
-                   Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
+                <p>In order to get started developing scripts for gaming engines, it is important
+                    to download an IDE that can edit this script files for you. Visual Studio 2019
+                    makes this as seamless as possible, and will even download Unity for you, shown
+                    below.
+                </p>
+            </br>
                    <a href="#" class="btn">Create Account</a>
             </div>
         </section>
 
-        <section class="card">
-                <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/visual_studio_download.png" alt="download"></a>
+        <section class="card" data-aos="fade-right">
                 <div>
                     <h3>Downloading Visual Studio 2019</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                       Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
-                       Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
+                        Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
+                        Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
+                    </br>
+                        <a href="#" class="btn">Create Account</a>
+                </div>
+                    <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
+        </section>
+
+        <section class="card" data-aos="fade-left">
+                <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
+                <div>
+                    <h3>Downloading Visual Studio 2019</h3>
+                    <p>In order to get started developing scripts for gaming engines, it is important
+                        to download an IDE that can edit this script files for you. Visual Studio 2019
+                        makes this as seamless as possible, and will even download Unity for you, shown
+                        below.
+                    </p>
+                </br>
                        <a href="#" class="btn">Create Account</a>
                 </div>
-            </section>
+        </section>
 
-            <section class="card">
-                    <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/visual_studio_download.png" alt="download"></a>
-                    <div>
-                        <h3>Downloading Visual Studio 2019</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                           Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
-                           Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
-                           <a href="#" class="btn">Create Account</a>
-                    </div>
-                </section>
+        <section class="card" data-aos="fade-right">
+                <div>
+                    <h3>Downloading Visual Studio 2019</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
+                        Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
+                    </br>
+                        <a href="#" class="btn">Create Account</a>
+                </div>
+                    <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
+        </section>
 
-                <section class="card">
-                        <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/visual_studio_download.png" alt="download"></a>
-                        <div>
-                            <h3>Downloading Visual Studio 2019</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                               Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
-                               Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
-                               <a href="#" class="btn">Create Account</a>
-                        </div>
-                    </section>
+        <section class="card" data-aos="fade-left">
+                <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
+                <div>
+                    <h3>Downloading Visual Studio 2019</h3>
+                    <p>In order to get started developing scripts for gaming engines, it is important
+                        to download an IDE that can edit this script files for you. Visual Studio 2019
+                        makes this as seamless as possible, and will even download Unity for you, shown
+                        below.
+                    </p>
+                </br>
+                        <a href="#" class="btn">Create Account</a>
+                </div>
+        </section>
 
-                    <section class="card">
-                            <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/visual_studio_download.png" alt="download"></a>
-                            <div>
-                                <h3>Downloading Visual Studio 2019</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                   Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
-                                   Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
-                                   <a href="#" class="btn">Create Account</a>
-                            </div>
-                        </section>
+        <section class="card" data-aos="fade-right">
+                <div>
+                    <h3>Downloading Visual Studio 2019</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
+                        Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
+                    </br>
+                        <a href="#" class="btn">Create Account</a>
+                </div>
+                    <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
+        </section>
     </main>
 
     <script src="../js/start_here.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>
 </body>
 </html>

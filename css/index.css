@@ -6,6 +6,13 @@ body {
 /* .nav-button{
     background: rgb(56, 16, 18);
 } */
+.logo-git{
+    width: 64px;
+}
+
+.logo-face{
+    width: 50px;
+}
 
 *{
     margin: 0;
@@ -18,9 +25,6 @@ nav{
     height: 10vh;
 }
 
-.hamburger{
-    z-index: 2;
-}
 .hamburger:hover{
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
@@ -41,7 +45,6 @@ h3{
 }
 
 .title-bar{
-    z-index: -1;
     display: flex;
     width: 90%;
     height: 100%;
@@ -67,14 +70,23 @@ h3{
     transition: 0.3s;
 }
 
-.title-aztec {
-    font: 40px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+.title-aztec .word1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
     color: #fefefe;
-    letter-spacing: -44;
+    letter-spacing: 10px;
     cursor: none;
     border-bottom: 1px solid transparent;
   }
-.title-aztec:hover{
+  .title-aztec .word2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 45px;
+    color: #9b3137;
+    letter-spacing: 10px;
+    cursor: none;
+    border-bottom: 1px solid transparent;
+  }
+.title-aztec .word1:hover{
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
     border-bottom: 1px solid transparent;
@@ -98,7 +110,20 @@ h3{
 .image{
     position: relative;
     width: 100%;
-    z-index: -1;
+}
+.hover{ 
+    transform: translate(-30px, -30px);
+    transition: 1s;
+    z-index: -4;
+    position: relative;
+}
+
+.reverse-hover{
+    transform: translate(30px, 30px);
+    transition: 1s;
+}
+.landing h1{
+    transition: 1s;
 }
 
 .fake-burg{
@@ -112,10 +137,6 @@ h1 {
     font-size: 200px;
     color: white;
     left: 20%;
-}
-
-.main-header h1{
-    
 }
 
 .logo{
@@ -139,7 +160,6 @@ h2{
     margin-left: auto;
     color: white;
     font-size: 40px;
-    z-index: 0;
 }
 
 .text-body{
@@ -156,6 +176,22 @@ h2{
     h1{
         font-size: 100px;
     }
+    .title-aztec .word1 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 27px;
+        color: #fefefe;
+        letter-spacing: 10px;
+        cursor: none;
+        border-bottom: 1px solid transparent;
+      }
+      .title-aztec .word2{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 27px;
+        color: #9b3137;
+        letter-spacing: 10px;
+        cursor: none;
+        border-bottom: 1px solid transparent;
+      }
     .nav-links{
         position: fixed;
         background: rgb(155, 49, 55);
@@ -176,10 +212,12 @@ h2{
         transition: .7s;
         opacity: 1;
     }
+    .title-bar .logo{
+        width: 50%;
+    }
 
     .landing{
         flex-direction: column;
-        z-index: 0;
     }
 
     nav{
@@ -202,9 +240,77 @@ h2{
         border-radius: 20px;
     }
 
-    .image, .text-body{
-        z-index: -1;
+}
+
+@media screen and (max-width: 501px){
+
+    h1{
+        font-size: 100px;
     }
+    .title-aztec .word1 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px;
+        color: #fefefe;
+        letter-spacing: 10px;
+        cursor: none;
+        border-bottom: 1px solid transparent;
+      }
+      .title-aztec .word2{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px;
+        color: #9b3137;
+        letter-spacing: 10px;
+        cursor: none;
+        border-bottom: 1px solid transparent;
+      }
+    .nav-links{
+        position: fixed;
+        background: rgb(155, 49, 55);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        transition: 1.5s;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        opacity: 0;
+    }
+    .nav-links.open{
+        clip-path: circle(1200px at 90% -20%);
+        -webkit-clip-path: circle(1200px at 90% -20%);
+        pointer-events: all;
+        transition: .7s;
+        opacity: 1;
+    }
+    .title-bar .logo{
+        width: 50%;
+    }
+
+    .landing{
+        flex-direction: column;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+    }
+    
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+        border-radius: 20px;
+    }
+
 }
 
 @media screen and (max-width: 1800px){
@@ -232,7 +338,6 @@ h2{
 
     .landing{
         flex-direction: column;
-        z-index: 0;
     }
 
     nav{
@@ -254,12 +359,7 @@ h2{
         margin: 5px;
         border-radius: 20px;
     }
-
-    .image, .text-body{
-        z-index: -1;
-    }
 }
-
 @media screen and (max-width: 1346px){
 
 h2 {
