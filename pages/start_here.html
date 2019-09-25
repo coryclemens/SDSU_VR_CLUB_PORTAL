@@ -10,8 +10,8 @@
     <title>Start Here</title>
 </head>
 <body>
-        <nav id="navbar">
-            <div class="hamburger">
+        <nav id="navbar" style="z-index: 1000;">
+            <div class="hamburger" style="top: 9vh;">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
@@ -50,11 +50,11 @@
         <section class="card" data-aos="fade-left">
             <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
             <div>
-                <h3>Downloading Visual Studio 2019</h3>
+                <h3 style = "text-align: center;">Downloading Visual Studio 2019</h3>
                 <p>In order to get started developing scripts for gaming engines, it is important
-                    to download an IDE that can edit this script files for you. Visual Studio 2019
+                    to download an IDE that can edit these script files for you. Visual Studio 2019
                     makes this as seamless as possible, and will even download Unity for you, shown
-                    below.
+                    later.
                 </p>
             </br>
                    <a href="#" class="btn">Download Here</a>
@@ -63,55 +63,35 @@
 
         <section class="card" data-aos="fade-right">
                 <div>
-                    <h3>Downloading Visual Studio 2019</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
-                        Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
+                    <h3 style = "text-align: center;">Getting help installing Visual Studio</h3>
+                    <p>Upon downloading the installer, you will be redirected to a screen 
+                        providing a link to extra help installing Visual Studio, shown here.
+                        Click the button below, or the image, in case you missed it!</p>
                     </br>
-                        <a href="#" class="btn">Create Account</a>
+                        <a href="https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2019" class="btn">Get help</a>
                 </div>
-                    <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/platforms.svg" alt="download"></a>
+                    <a href="https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2019"><img src="../assets/screenshots/instructions.svg" style="width: inheritS; height: inherit;" alt="instructions"></a>
         </section>
 
         <section class="card" data-aos="fade-left">
-                <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
+                <a href="https://id.unity.com/en/conversations/dcab0cf1-d25f-4041-abd8-bf4a62e1ac67012f"><img src="../assets/screenshots/platforms.svg" alt="download" style="width: auto; height: auto; padding-top: 35%;"></a>
                 <div>
-                    <h3>Downloading Visual Studio 2019</h3>
-                    <p>In order to get started developing scripts for gaming engines, it is important
-                        to download an IDE that can edit this script files for you. Visual Studio 2019
-                        makes this as seamless as possible, and will even download Unity for you, shown
-                        below.
+                    <h3 style = "text-align: center;">Downloading Unity through Visual Studio Installer</h3>
+                    <p>At a certain point during your installation, you will be asked what packages
+                       you would like included in your Visual Studio software. Download the packages
+                       in the image here. With all of the necesary packages selected, most importantly
+                       "Game development with Unity", we can proceed with the download, and notice that 
+                        Unity gets installed for us. If Unity did not get installed automatically, 
+                        see the steps below.
                     </p>
                 </br>
-                       <a href="#" class="btn">Create Account</a>
                 </div>
         </section>
 
-        <section class="card" data-aos="fade-right">
-                <div>
-                    <h3>Downloading Visual Studio 2019</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. 
-                        Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p>
-                    </br>
-                        <a href="#" class="btn">Create Account</a>
-                </div>
-                    <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
-        </section>
+        <a class = "unity-tutorial" data-aos="fade-right" onclick="displayUnity();" style = "margin-left: 21%; margin-bottom: 5%; margin-top: -5%; text-align: center; width: 50%; align-content: center; outline: none;">Click here if Unity didn't install!</a>
+        <div id="container2">
 
-        <section class="card" data-aos="fade-left">
-                <a href="https://visualstudio.microsoft.com/downloads/"><img src="../assets/screenshots/VS_Download.svg" alt="download"></a>
-                <div>
-                    <h3>Downloading Visual Studio 2019</h3>
-                    <p>In order to get started developing scripts for gaming engines, it is important
-                        to download an IDE that can edit this script files for you. Visual Studio 2019
-                        makes this as seamless as possible, and will even download Unity for you, shown
-                        below.
-                    </p>
-                </br>
-                        <a href="#" class="btn">Create Account</a>
-                </div>
-        </section>
+        </div>
 
         <section class="card" data-aos="fade-right">
                 <div>

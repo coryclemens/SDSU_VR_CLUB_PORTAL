@@ -102,6 +102,22 @@ p{
     transition: .5s;
 }
 
+.unity-tutorial{
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 20px;
+    margin-left: 35%; 
+    margin-bottom: 5%;
+    margin-top: 0; 
+    text-align: center; 
+    width: 50%; 
+    align-content: center; 
+    outline: none;
+}
 
 
 
@@ -110,6 +126,9 @@ p{
 
 
 
+.abs {
+    position: absolute;
+}
 
 .hamburger{
     z-index: 2;
