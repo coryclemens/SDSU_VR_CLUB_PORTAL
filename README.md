@@ -11,3 +11,9 @@ Once the files are downloaded, you can run index.html to view the progress--
 ## Contributing
 Create your own branch off of main and submit a pull request if you'd like to contribute!
 
+## To Do:
+-Build out entire website layout/frame
+-Fill each page with its proper content
+-Host
+-???
+-Profit
