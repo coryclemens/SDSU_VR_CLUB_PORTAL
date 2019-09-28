@@ -4,6 +4,7 @@ const links = document.querySelectorAll(".nav-links li");
 const unityA = document.querySelector(".unity-tutorial");
 var clicks = 0;
 
+//event for hamburger click
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
     links.forEach(link =>{
@@ -11,16 +12,19 @@ hamburger.addEventListener("click", () => {
     });
 });
 
+//onclick() for facebook link, navigates user to SDSU VR Facebook
 function facebook(){
     newUrl = "https://www.facebook.com/VRClubSDSU";
     document.location.href = newUrl;
 }
 
+//onlcick() for github link, navigates user to SDSU VR github
 function github(){
     newUrl = "https://github.com/SDSU-VR-Club";
     document.location.href = newUrl;
 }
 
+//onclick() for displaying optional Unity instructions
 function displayUnity(){
         
     if(clicks%2 != 0)
@@ -34,7 +38,6 @@ function displayUnity(){
     }
     else
     {
-        window.alert(clicks);
         //html to add to DOM element
         var html1 = "<div><h3>Downloading Visual Studio 2019</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolor vel in enim dolorum, a, ea quae expedita sequi assumenda adipisci omnis. Eaque fugiat asperiores libero temporibus repellendus, eius quo.</p></br><a href=\"#\" class=\"btn\">Create Account</a></div><a href=\"https://visualstudio.microsoft.com/downloads/\"><img src=\"../assets/screenshots/VS_Download.svg\" alt=\"download\"></a>";
         var html2 = "<a href=\"https://visualstudio.microsoft.com/downloads/\"><img src=\"../assets/screenshots/VS_Download.svg\" alt=\"download\"></a><div><h3 style = \"text-align: center;\">Downloading Visual Studio 2019</h3><p>In order to get started developing scripts for gaming engines, it is important to download an IDE that can edit these script files for you. Visual Studio 2019 makes this as seamless as possible, and will even download Unity for you, shown later.</p></br><a href=\"#\" class=\"btn\">Download Here</a></div>";
@@ -59,7 +62,6 @@ function displayUnity(){
         newEl2.innerHTML = html2;
         p.appendChild(newEl2);
         ++clicks;
-        window.alert(clicks);
     }
 
     
