@@ -1,10 +1,63 @@
 * {
     margin: 0;
     padding: 0;
+    transition: .3s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body {
-    background: url(../assets/PageBackgrounds/vr.svg) no-repeat;
+    background: url(../assets/PageBackgrounds/background-long.svg) no-repeat;
     font-family: sans-serif;
+}
+.projects-frame{
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+    height: 500px;
+    margin-top: 4rem;
+}
+.image-container
+{
+    position: relative;
+    display: inline-grid;
+    margin: 0 auto;
+    right: 7%;
+    width: 50%;
+}
+.content
+{
+    margin: 0 auto;
+}
+
+.image-container h1, p{
+    color: rgb(208, 195, 195);
+    text-align: center;
+    position: relative;
+    margin: 6px auto;
+    padding: 10px 10px 10px 10px;
+}
+.crystal 
+{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.galaxy
+{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.image-overlay
+{
+    top: 30%;
+    left: 18%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
 }
 
 
@@ -43,8 +96,8 @@ body {
     z-index: 2;
 }
 .hamburger:hover{
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    -webkit-filter: drop-shadow(3px 3px 3px white);
+    filter: drop-shadow(3px 3px 3px white);
 }
 
 .aztec-logo:hover{
@@ -62,8 +115,8 @@ body {
     transition: 0.3s;
 }
 .title-bar img:hover{
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    -webkit-filter: drop-shadow(1px 1px 1px  white);
+    filter: drop-shadow(1px 1px 1px white);
     cursor: pointer;
 }
 

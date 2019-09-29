@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    transition: .3s;
 }
 
 a {
@@ -134,13 +135,13 @@ p{
     z-index: 2;
 }
 .hamburger:hover{
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    -webkit-filter: drop-shadow(4px 4px 4px white);
+    filter: drop-shadow(4px 4px 4px white);
 }
 
 .aztec-logo:hover{
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    -webkit-filter: drop-shadow(5px 5px 5px white);
+    filter: drop-shadow(5px 5px 5px white);
 }
 
 .title-bar{
@@ -153,8 +154,8 @@ p{
     transition: 0.3s;
 }
 .title-bar img:hover{
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    -webkit-filter: drop-shadow(1px 1px 1px white);
+    filter: drop-shadow(1px 1px 1px white);
     cursor: pointer;
 }
 
