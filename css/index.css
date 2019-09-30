@@ -8,10 +8,12 @@ body {
 } */
 .logo-git{
     width: 64px;
+    filter: drop-shadow(1px 1px 1px #222);
 }
 
 .logo-face{
     width: 50px;
+    filter: drop-shadow(1px 1px 1px #222);
 }
 
 *{
@@ -25,6 +27,9 @@ nav{
     height: 10vh;
 }
 
+.hamburger{
+    filter: drop-shadow(1px 1px 1px #222);
+}
 .hamburger:hover{
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
@@ -318,7 +323,7 @@ h2{
 
 }
 
-@media screen and (max-width: 1800px){
+@media screen and (max-width: 2000px){
 
     .nav-links{
         position: fixed;
