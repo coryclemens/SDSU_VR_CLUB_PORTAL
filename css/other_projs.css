@@ -1,63 +1,104 @@
-* {
-    margin: 0;
-    padding: 0;
-    transition: .3s;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-body {
-    background: url(../assets/PageBackgrounds/background-long.svg) no-repeat;
-    font-family: sans-serif;
-}
-.projects-frame{
-    display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    margin-bottom: 4rem;
-    height: 500px;
-    margin-top: 4rem;
-}
-.image-container
-{
-    position: relative;
-    display: inline-grid;
-    margin: 0 auto;
-    right: 7%;
-    width: 50%;
-}
-.content
-{
-    margin: 0 auto;
+*{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.image-container h1, p{
-    color: rgb(208, 195, 195);
+body{
+    background-color: black;
+}
+
+h1, h2{
     text-align: center;
+    color: white;
+    letter-spacing: 25px;
+    transition: .5s;
+}
+    h1:hover, h2:hover {
+        cursor: pointer;
+    }
+
+.space{
+    letter-spacing: 20px;
+    transition: .5s;
     position: relative;
-    margin: 6px auto;
-    padding: 10px 10px 10px 10px;
-}
-.crystal 
-{
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    border-radius: 100%;
 }
 
-.galaxy
-{
-    height: 500px;
-    width: 500px;
+.split{
+    height: 100%;
+    width: 50%;
     position: absolute;
-    border-radius: 100%;
+    z-index: 10;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
-.image-overlay
-{
-    top: 30%;
-    left: 18%;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 50px;
+.left {
+    left: 0;
+    background-image: url(../assets/Gal2.jpg);
+    height: 990px;
+}
+
+.right {
+    right: 0;
+    background-image: url(../assets/Drugs\ molecule\ chemistry\ wallpaper\ 1440x900\ 341424\ WallpaperUP.jpg);
+    height: 990px;
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* For arrows */
+i {
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+p {
+    text-align: center;
+    width: 100%;
+}
+.rightarrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.leftarrow {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.arrowcontainer{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 846px){
+    h1, h2{
+        text-align: center;
+        color: white;
+        letter-spacing: 13px;
+        transition: .5s;
+    }
 }
 
 .aztec-logo{
@@ -105,7 +146,7 @@ body {
 }
 
 .hamburger{
-    z-index: 2;
+    z-index: 1000;
 }
 .hamburger:hover{
     -webkit-filter: drop-shadow(3px 3px 3px white);
@@ -286,9 +327,9 @@ body {
         pointer-events: none;
         opacity: 0;
     }
-    .nav-links.open{
-        clip-path: circle(15900px at 90% -20%);
-        -webkit-clip-path: circle(1900px at 90% -20%);
+    .open{
+        clip-path: circle(2500px at 90% -20%);
+        -webkit-clip-path: circle(2500px at 90% -20%);
         pointer-events: all;
         transition: .7s;
         opacity: 1;
