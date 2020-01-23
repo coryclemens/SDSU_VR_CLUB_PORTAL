@@ -14,6 +14,11 @@ function github() {
     document.location.href = newUrl;
 }
 
+function discord() {
+    newUrl = "https://discord.gg/MjSXgfh";
+    document.location.href = newUrl;
+}
+
 $(document).ready(function () {
 
     $(".hamburger").click(function navOpen() {

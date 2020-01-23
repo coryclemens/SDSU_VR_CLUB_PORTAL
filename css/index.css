@@ -16,6 +16,11 @@ body {
     filter: drop-shadow(1px 1px 1px #222);
 }
 
+.logo-discord{
+    width: 70px;
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
 *{
     margin: 0;
     padding: 0;

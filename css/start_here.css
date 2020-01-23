@@ -16,8 +16,23 @@ a {
     text-decoration: none;
 }
 
+.logo-git{
+    width: 64px;
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+.logo-face{
+    width: 50px;
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+.logo-discord{
+    width: 70px;
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
 .container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin:auto;
     overflow: auto;
     padding: 0 2rem;
