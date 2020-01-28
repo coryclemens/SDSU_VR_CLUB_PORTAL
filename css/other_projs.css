@@ -24,11 +24,16 @@ h1, h2{
     position: relative;
 }
 
+.home{
+    color: white;
+    font-size: 35px;
+}
+
 .split{
     height: 100%;
     width: 50%;
     position: absolute;
-    z-index: 10;
+    z-index: 0;
     top: 0;
     overflow-x: hidden;
     padding-top: 20px;
@@ -81,13 +86,13 @@ p {
     position: relative;
 }
 
-
-
-
-
-
-
-
+.nav-links.open{
+    clip-path: circle(1200px at 90% -20%);
+    -webkit-clip-path: circle(1200px at 90% -20%);
+    pointer-events: all;
+    transition: .7s;
+    opacity: 1;
+}
 
 
 
@@ -115,28 +120,14 @@ p {
     filter: drop-shadow(1px 1px 1px #222);
 }
 
+a { color:white;
+    text-decoration: none; 
+} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a:visited { text-decoration: none; color:white; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:white; }
+a:hover, a:active { text-decoration: none; color:white }
 
 
 
@@ -276,6 +267,7 @@ p {
         pointer-events: all;
         transition: .7s;
         opacity: 1;
+        z-index: 10;
     }
 
     .card{
@@ -327,12 +319,13 @@ p {
         pointer-events: none;
         opacity: 0;
     }
-    .open{
+    .nav-links.open{
         clip-path: circle(2500px at 90% -20%);
         -webkit-clip-path: circle(2500px at 90% -20%);
         pointer-events: all;
         transition: .7s;
         opacity: 1;
+        z-index: 10;
     }
 
     .landing{

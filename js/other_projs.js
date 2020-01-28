@@ -1,8 +1,9 @@
 var clicksLeft = 0;
 var clicksRight = 0;
 
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
 
 function facebook() {
     newUrl = "https://www.facebook.com/VRClubSDSU";
@@ -19,11 +20,28 @@ function discord() {
     document.location.href = newUrl;
 }
 
+function galaxy_gaze() {
+    newUrl = "https://carterandrews.org/projects/project_Galaxy_Gazer.html";
+    document.location.href = newUrl;
+}
+
+function crystal_craft() {
+    newUrl = "https://www.m3sdsu.com/crystal-craft";
+    document.location.href = newUrl;
+}
+
+function home() {
+
+}
+
+
 $(document).ready(function () {
 
-    $(".hamburger").click(function navOpen() {
-        window.alert(4);
-        $(".nav-links").toggleClass("open");
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle("fade");
+        });
     });
 
     $(".rightarrow").click(function click_right_arrow() {

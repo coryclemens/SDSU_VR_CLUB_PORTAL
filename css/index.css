@@ -3,9 +3,6 @@ body {
     font-family: sans-serif;
 }
 
-/* .nav-button{
-    background: rgb(56, 16, 18);
-} */
 .logo-git{
     width: 64px;
     filter: drop-shadow(1px 1px 1px #222);
@@ -134,6 +131,8 @@ h3{
 }
 .landing h1{
     transition: 1s;
+    padding-top: 100px;
+    padding-left: 100px;
 }
 
 .unity {
@@ -183,8 +182,8 @@ h2{
     width: 100%;
     bottom: 25%;
     right: 15%
+    
 }
-
 
 @media screen and (max-width: 768px){
 
@@ -199,7 +198,7 @@ h2{
         cursor: none;
         border-bottom: 1px solid transparent;
       }
-      .title-aztec .word2{
+    .title-aztec .word2{
         font-family: 'DM Sans', sans-serif;
         font-size: 27px;
         color: #9b3137;

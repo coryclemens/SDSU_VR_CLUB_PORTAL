@@ -208,6 +208,31 @@ p{
     border-color: white;
   }
 
+  .title-aztec .word1-source {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 50px;
+    color: #fefefe;
+    letter-spacing: 10px;
+    cursor: none;
+    border-bottom: 1px solid transparent;
+    padding-right: 20px;
+  }
+  .title-aztec .word2-source{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 50px;
+    color: #9b3137;
+    letter-spacing: 10px;
+    cursor: none;
+    border-bottom: 1px solid transparent;
+    padding-left: 20px;
+  }
+.title-aztec .word1-source:hover{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    border-bottom: 1px solid transparent;
+    border-color: white;
+  }
+
 .nav-links li a {
     color: white;
     text-decoration: none;
@@ -272,7 +297,7 @@ p{
         opacity: 0;
     }
     .nav-links.open{
-        clip-path: circle(1200px at 90% -20%);
+        clip-path: circle(1400px at 90% -20%);
         -webkit-clip-path: circle(1200px at 90% -20%);
         pointer-events: all;
         transition: .7s;
@@ -330,7 +355,7 @@ p{
     }
     .nav-links.open{
         clip-path: circle(15900px at 90% -20%);
-        -webkit-clip-path: circle(1900px at 90% -20%);
+        -webkit-clip-path: circle(2300px at 90% -20%);
         pointer-events: all;
         transition: .7s;
         opacity: 1;

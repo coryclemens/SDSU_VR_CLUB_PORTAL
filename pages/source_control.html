@@ -11,6 +11,148 @@
     <title>Source Control!</title>
 </head>
 
+<body>
+    <nav id="navbar" style="z-index: 1000;">
+        <div class="hamburger" style="top: 9vh;">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-button"><a href="index.html">Home</a></li>
+            <li class="nav-button"><a href="start_here.html">Start Here</a></li>
+            <li class="nav-button"><a href="unity_tut.html">Getting Familiar with Unity</a></li>
+            <!-- <li class="nav-button"><a href="#">Creating Your First Game</a></li>
+                <li class="nav-button"><a href="#">Making it VR</a></li>
+                <li class="nav-button"><a href="#">Developing VR without a Headset</a></li>
+                <li class="nav-button"><a href="#">Choosing a platform</a></li> -->
+            <li class="nav-button"><a href="other_projs.html">Our Other Projects</a></li>
+        </ul>
+        <div class="title-bar">
+            <img class="aztec-logo" src="../assets/aztec.png" alt="aztec"
+                style="width: 14%; position: relative; z-index: -1;">
+            <h3 class="title-aztec">
+                <span class="word1-source">SOURCE</span>
+                <span class="word2-source"> CONTROL</span>
+            </h3>
+            <img class="logo-face" src="../assets/facebook.png" alt="facebook" onclick="facebook()">
+            <img class="logo-git" src="../assets/GitHub-Mark.png" alt="github" onclick="github()">
+            <img class="logo-discord" src="../assets/discord_logo.png" alt="discord" onclick="discord()">
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <p> Now that Visual Studio and Unity are properly set up, and now that you have
+            gotten the chance to hopefully learn and explore the wonders of Unity, we are now ready
+            to contribute to group projects through the concept of 'version control'. Version control helps
+            all members of the club to edit, create, and contribute to the same project (code base/repository)
+            remotely from our local machines. Any edits or changes can be pushed to the project for everyone
+            else to use and contribute to as well.
+        </p>
+    </header>
+
+    <main class="container">
+        <section class="card" data-aos="fade-left">
+            <a href="https://git-scm.com/downloads"><img src="../assets/screenshots/GIT.PNG" alt="download"></a>
+            <div>
+                <h3 style="text-align: center;">Downloading GIT</h3>
+                <p>In order to employ the idea of version control, we will use a popular tool
+                    known as Git. Git is an incredibly powerful, open source version control system that
+                    keeps track of repositories/projects, the changes team members make to them, and orchestrates
+                    everything for us behind the scenes. Since Git doesn't come with a GUI out of the box,
+                    meaning it is typically dealt with in the terminal, we will need to download a GUI so we
+                    can easily interact with Git. For now, we can download Git and not worry about the terminal.
+                </p>
+                </br>
+                <a href="https://git-scm.com/downloads" class="btn">Download Here</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <div>
+                <h3 style="text-align: center;">Creating A Github Account</h3>
+                <p>Github.com is an online version control system, where students, developers,
+                    and programmers in general can store their school, personal, or club projects.
+                    Users can create 'repositories', and other users can contribute to these projects,
+                    or copy them to their local machine and mess with them themselves. We can think of Github
+                    as the social media for coding and projects. For all of our projects in this club, we will
+                    create repositories on Github.com so that each member of the club can access them. Click the image
+                    or the button to create an account and get started.
+                </p>
+                </br>
+                <a href="https://github.com/join" class="btn">Create Account Here</a>
+            </div>
+            <a href="https://github.com/join"><img src="../assets/screenshots/join-github.PNG"
+                    style=" padding-top: 150px; width: inherit; height: inherit;" alt="instructions"></a>
+        </section>
+        <section class="card" data-aos="fade-left">
+            <a href="https://desktop.github.com/"><img src="../assets/screenshots/github-desktop.PNG" alt="download"
+                    style="padding-top: 50px;"></a>
+            <div>
+                <h3 style="text-align: center;">Downloading Github Desktop</h3>
+                <p>Now that we have Git installed, as well as a Github account created, we can now focus
+                    on obtaining a GUI for Git, so that we do not need to use a terminal to manage our repositories.
+                    Github Desktop will make 'cloning' our club repositorires as easy as a click, and will manage every
+                    change, branch creation, and everything else, in one simple window. Go ahead and download it now!
+                </p>
+                </br>
+                <a href="https://desktop.github.com/" class="btn">Download Here</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <div>
+                <h3 style="text-align: center;">Linking Github Desktop to Your Github Account</h3>
+                <p>
+                    Before we can start editing repositories and pushing our changes, we must configure Git (which we
+                    downloaded earlier)
+                    with your Github account. Click the image or button for more information on how to configure the
+                    two!
+                </p>
+                </br>
+                <a href="https://help.github.com/en/desktop/getting-started-with-github-desktop/configuring-git-for-github-desktop"
+                    class="btn">Configuration Help</a>
+            </div>
+            <a
+                href="https://help.github.com/en/desktop/getting-started-with-github-desktop/configuring-git-for-github-desktop"><img
+                    src="../assets/screenshots/config-github.PNG"
+                    style=" padding-top: 150px; width: inherit; height: inherit;" alt="instructions"></a>
+        </section>
+        <section class="card" data-aos="fade-left">
+            <img src="../assets/screenshots/url-github.PNG" alt="" style="padding-top: 50px;"></a>
+            <div>
+                <h3 style="text-align: center;">Cloning Our First Repository</h3>
+                <p>With all of the boring downloads and configurations out of the way, we should
+                    hopefully be ready to add a repository and make changes to it. To do this, we need the repository
+                    URL from Github so that we can download it on our local machine through Github Desktop. Navigate to
+                    the repository
+                    you'd like to clone, and get the URL from here!
+                </p>
+                </br>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="../js/start_here.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+</body>
+<footer>
+    <small>&copy; Copyright 2020, SDSU VR CLUB</small>
+</footer>
 
 
 

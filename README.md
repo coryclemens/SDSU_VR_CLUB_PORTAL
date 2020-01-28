@@ -16,14 +16,5 @@ Create your own branch off of main and submit a pull request if you'd like to co
     -Landing (BUILT)
     -Start (BUILT)
     -Getting Familiar with Unity (IN PROG)
-    -Creating Your First Game (--)
-    -Making it VR (--)
-    -Developing VR w/o headset (--)
-    -Choosing a platform (--)
-    -Source Control (--)
-    -Our Other Projects (--)
--Fill each page with its proper content
--Optimize each page for native displays
--Host
--???
--Profit
+    -Source Control (BUILT)
+    -Our Other Projects (ISh)
