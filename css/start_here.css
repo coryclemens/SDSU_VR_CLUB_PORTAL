@@ -79,10 +79,10 @@ p{
     padding: 1rem;
 }
 
-.img {
+/* .img {
     width: 100%;
     size: 500px 500px;
-}
+} */
 
 .card {
     display: grid;
@@ -135,8 +135,16 @@ p{
     outline: none;
 }
 
-
-
+.info-link a{
+    color: black;
+    text-decoration: underline;
+}
+.info-link a:hover{
+    color: black;
+}
+.info-link a:visited{
+    color: black;
+}
 
 
 
