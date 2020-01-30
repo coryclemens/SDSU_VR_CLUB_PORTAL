@@ -131,7 +131,7 @@ h3{
 }
 .landing h1{
     transition: 1s;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: 100px;
 }
 
@@ -146,7 +146,7 @@ h3{
 
 h1 {
     position: absolute;
-    top: 200px;
+    top: 100px;
     width: 60%;
     font-size: 200px;
     color: white;
