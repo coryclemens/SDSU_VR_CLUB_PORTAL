@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/start_here.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>About Us</title>
+</head>
+
+<body>
+    <nav id="navbar" style="z-index: 1000;">
+        <div class="hamburger" style="top: 9vh;">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-button"><a href="../index.html">Home</a></li>
+            <li class="nav-button"><a href="start_here.html">Start Here</a></li>
+            <li class="nav-button"><a href="unity_tut.html">Getting Familiar with Unity</a></li>
+            <!-- <li class="nav-button"><a href="#">Creating Your First Game</a></li>
+                <li class="nav-button"><a href="#">Making it VR</a></li>
+                <li class="nav-button"><a href="#">Developing VR without a Headset</a></li>
+                <li class="nav-button"><a href="#">Choosing a platform</a></li> -->
+            <li class="nav-button"><a href="source_control.html">Source/Version Control!</a></li>
+            <li class="nav-button"><a href="other_projs.html">Our Other Projects</a></li>
+        </ul>
+        <div class="title-bar">
+            <img class="aztec-logo" src="../assets/aztec.png" alt="aztec"
+                style="width: 14%; position: relative; z-index: -1;">
+            <h3 class="title-aztec">
+                <span class="word1">ABOUT </span>
+                <span class="word2"> US</span>
+            </h3>
+            <img class="logo-face" src="../assets/facebook.png" alt="facebook" onclick="facebook()">
+            <img class="logo-git" src="../assets/GitHub-Mark.png" alt="github" onclick="github()">
+            <img class="logo-discord" src="../assets/discord_logo.png" alt="discord" onclick="discord()">
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <p> The San Diego State University Virtual Reality Club is a project based Virtual Reality club, open
+            to all majors, professions, and skill levels. The purpose of this club is to promote the learning and
+            exploration
+            of virtual reality, the softwares/hardwares that revolve around it, and to inspire student-driven
+            collaboration
+            through innovation and technology. There is no experience needed, and no dues are required in order to be
+            part! Meetings are every Friday, from 3-4:30 PM, in AH-1120.
+        </p>
+    </header>
+
+    <main class="container">
+        <section class="card" data-aos="fade-left">
+            <img style="padding-top: 50px;" src="../assets/screenshots/hackathon.png" alt="hackathon"
+                style="width: 100%;">
+            <div>
+                <h3 style="text-align: center;">Origin Story</h3>
+                <p>"At a VR hackathon at the University of California, San Diego (UCSD),
+                    I met a fellow SDSU student named Redgy Canos. She and I teamed up and learned a lot about VR
+                    together.
+                    And from there, we wanted to bring this technology to SDSU." -Roselynn Conrady.
+                </p>
+                <p> This club was
+                    founded in 2017 by
+                    Roselynn Conrady,
+                    Redgy Canos, Neha Nene, Nicholas Misleh, and Sierra Morehardt.
+                </p>
+                </br>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <div>
+                <h3 style="text-align: center;">Our Officers (Right-to-Left)</h3>
+                <p>
+                    Treasurer - Sam Wagner</br>
+                    Vice President - Kain Shepard</br>
+                    President - Carter Andrews</br>
+                    Secretary - Vanessa Chammas</br>
+                    Social Media Manager - Roselynn Conrady</br>
+                    Outreach Coordinator - Patrick Perrine</br>
+                    Initiator Officer - Cory Clemens</br>
+                    CSSC Representative - Nathaniel Stewart (Not Pictured)</br>
+                    Faculty Advisor - Patty Kraft (Not Pictured)</p>
+                </br>
+            </div>
+            <img src="../assets/screenshots/team_pic.jpg" style="padding-top: 50px;" alt="team">
+        </section>
+        <div class="info-link" style="text-decoration: none; text-align: center; font-size: 50px; color: black;">
+            <a href="other_projs.html">OUR PROJECTS</a>
+        </div>
+    </main>
+
+
+    <script src="../js/start_here.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+</body>
+<footer>
+    <small>&copy; Copyright 2020, SDSU VR CLUB</small>
+</footer>
